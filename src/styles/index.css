@@ -1,0 +1,55 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css');
+
+body {
+  background: darkslateblue !important;
+}
+
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 5em !important;
+}
+
+.stars-outer {
+  display: inline-block;
+  position: relative;
+  font-family: 'Font Awesome\ 5 Free' !important;
+  font-weight: 900 !important;
+}
+ 
+.stars-outer::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+}
+ 
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+ 
+.stars-inner::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  color: #f8ce0b;
+}
+
+.btn-group i {
+  font-size: 1.2em;
+  width: 1.3em;
+}
+
+.add-movie-btn {
+  font-size: 2em !important;
+  opacity: .2 !important;
+  transition: opacity .3s;
+}
+
+.add-movie-btn:hover {
+  opacity: 1 !important;
+  transition: opacity .3s;
+}
+
+.add-movie-btn i {
+  margin: auto;
+}

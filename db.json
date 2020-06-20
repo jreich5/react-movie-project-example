@@ -1,0 +1,9 @@
+{
+  "movies": [
+    {
+      "title": "Casablanca",
+      "rating": "4",
+      "id": 1
+    }
+  ]
+}
