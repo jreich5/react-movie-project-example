@@ -6,24 +6,9 @@
       "id": 1
     },
     {
-      "title": "The Matrix",
-      "rating": "5",
-      "id": 5
-    },
-    {
-      "title": "Hello",
-      "rating": "3",
-      "id": 8
-    },
-    {
-      "title": "Hello",
-      "rating": "3",
-      "id": 10
-    },
-    {
-      "title": "Here is Another",
-      "rating": "5",
-      "id": 11
+      "title": "Well",
+      "rating": "1",
+      "id": 2
     }
   ]
 }
