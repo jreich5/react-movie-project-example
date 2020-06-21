@@ -17,7 +17,7 @@ function Movie({ movie, deleteMovie }) {
     }
   }
   return (
-    <div className="col-lg-3">
+    <div className="col-lg-3 my-3">
       <article className="card bg-dark text-light">
         <div className="d-flex justify-content-end mr-1 mt-1">
           <div className="btn-group">
