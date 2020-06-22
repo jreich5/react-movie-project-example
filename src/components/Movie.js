@@ -6,7 +6,7 @@ Movie.propTypes = {
   deleteMovie: PropTypes.func
 }
 
-function Movie({ movie, deleteMovie }) {
+function Movie({ movie, deleteMovie, setEditMovie }) {
   const starStyle = {
     width: `${movie.rating * 20}%`
   }
@@ -16,10 +16,10 @@ function Movie({ movie, deleteMovie }) {
 
   return (
     <div className="col-lg-3 my-3">
-      <article className="card bg-dark text-light">
+      <article className="card border-light bg-dark text-light">
         <div className="d-flex justify-content-end mr-1 mt-1">
           <div className="btn-group">
-            <button className="btn btn-primary d-flex p-1"><i className="text-light fas fa-pen-square m-auto"></i></button>
+            <button className="btn btn-primary d-flex p-1" onClick={() => setEditMovie({...movie})}><i className="text-light fas fa-pen-square m-auto"></i></button>
             <button id="delete-btn" onClick={deleteBtn} className="btn btn-danger d-flex p-1" data-toggle="modal" data-target="#delete-movie-modal"><i className="text-light fas fa-minus-circle m-auto"></i></button>
           </div>
         </div>
