@@ -2,15 +2,25 @@ import React, {useState, useEffect} from 'react'
 import PropTypes from 'prop-types'
 
 EditMovieModal.propTypes = {
-
+  editMovie: PropTypes.func,
+  movieToUpdate: PropTypes.object
 }
 
 function EditMovieModal({editMovie, movieToUpdate}) {
+
+  // state
+
   const [ editMovieValue, setEditMovieValue ] = useState(movieToUpdate)
+
+
+  // effects
 
   useEffect(() => {
     setEditMovieValue(movieToUpdate)
   }, [movieToUpdate])
+
+
+  // render
 
   return (
     <div className="modal fade" id="edit-movie-modal" tabIndex="-1" role="dialog" aria-labelledby="edit-movie-modal" aria-hidden="true">
@@ -55,7 +65,6 @@ function EditMovieModal({editMovie, movieToUpdate}) {
       </div>
     </div>
   )
-
 }
 
 

@@ -6,14 +6,21 @@ AddMovieModal.propTypes = {
 }
 
 function AddMovieModal({ addMovie }) {
+
+  // state
+
   const [ title, setTitle ] = useState('')
   const [ rating, setRating ] = useState('default')
+
+  // functions
 
   function handleAddMovie() {
     addMovie(title, rating)
     setTitle('')
     setRating('default')
   }
+
+  // render
 
   return (
     <div className="modal fade" id="add-movie-modal" tabIndex="-1" role="dialog" aria-labelledby="add-movie-modal" aria-hidden="true">
@@ -30,14 +37,12 @@ function AddMovieModal({ addMovie }) {
               <div className="form-group">
                 <label htmlFor="title">Title</label>
                 <input className="form-control" type="text" id="title" placeholder="Enter movie title" value={title} onChange={e => {
-                  console.log(e.target.value)
                   setTitle(e.target.value)
                 }} />
               </div>
               <div className="form-group">
                 <label htmlFor="rating">Rating</label>
                 <select className="form-control" name="rating" type="text" id="rating" value={rating} placeholder="Enter movie rating" onChange={e => {
-                  console.log(e.target.value)
                   setRating(e.target.value)
                 }}>
                   <option value="default"disabled>Select a Star Rating</option>

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 DeleteMovieModal.propTypes = {
-  deleteMovie: PropTypes.func
+  confirmDeleteMovie: PropTypes.func
 }
 
 function DeleteMovieModal({ confirmDeleteMovie }) {

@@ -3,16 +3,25 @@ import PropTypes from 'prop-types'
 
 Movie.propTypes = {
   movie: PropTypes.object,
-  deleteMovie: PropTypes.func
+  deleteMovie: PropTypes.func,
+  setEditMovie: PropTypes.func
 }
 
 function Movie({ movie, deleteMovie, setEditMovie }) {
+
+  // styles
+
   const starStyle = {
     width: `${movie.rating * 20}%`
   }
+  
+  // functions
+
   function deleteBtn() {
     deleteMovie(movie.id)
   }
+
+  // render
 
   return (
     <div className="col-lg-3 my-3">
